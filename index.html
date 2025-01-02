@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preload" href="image/visionhub-Img.jpg" as="image">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header aria-label="Website Header">
+        <div class="logo">
+            <a href="#">
+                <img src="image/logo.png" alt="VisionHub Logo">
+            </a>
+        </div>
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1>VISION HUB</h1>
+            <p>Inspiring Creations, Endless Possibilities</p>
+            <div class="buttons">
+                <a href="https://www.youtube.com/" target="_blank" class="btn">Watch Video</a>
+                <a href="http://www.learn-more.eu/" target="_blank" class="btn">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <h3>Creative Design</h3>
+                <p>We bring ideas to life with cutting-edge designs tailored to your vision.</p>
+            </div>
+            <div class="feature">
+                <h3>AI-Powered Personalization</h3>
+                <p>Intelligent features to personalize user experiences based on preferences.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Our dedicated team ensures uninterrupted assistance anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-gallery">
+            <img src="image/project1.jpg" alt="Project1">
+            <img src="image/project2.jpg" alt="Project2">
+            <img src="image/project3.jpg" alt="Project3">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Vision Hub turned my ideas into reality. Their team is incredible!"</p>
+            <h4>- Sangeeta Netam</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Professional and reliable services. Highly recommended."</p>
+            <h4>- Shivansh Yadav</h4>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span> Vision Hub. All Rights Reserved.</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script> 
+    </footer>
+</body>
+</html>

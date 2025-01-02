@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Section */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/visionhub-img.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: auto;
+    width: 150px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    left: 20px; 
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.main-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.main-nav ul li {
+    display: inline-block;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #fff;
+    color: #333;
+    border-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons .btn {
+    padding: 10px 25px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.portfolio-gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.portfolio-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonials .testimonial {
+    margin: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 12px 30px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background: #d35400;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Tablets and small devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .main-nav ul li a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons .btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+}
